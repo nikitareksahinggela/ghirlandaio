@@ -1,4 +1,5 @@
 # Resume Kelompok 7
+## Nama: Finka Suci Safitri
 ## NIM: 12402051030091
 ## Mata Kuliah: Perpustakaan dan Arsip Digital
 
