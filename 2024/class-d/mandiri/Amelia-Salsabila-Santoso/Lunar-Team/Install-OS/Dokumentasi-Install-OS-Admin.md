@@ -53,10 +53,11 @@ pvcreate /dev/mapper/admin
 ```
 ### Membuat volume group
 ```
-vgcreate system /dev/mapper/admin
+vgcreate team /dev/mapper/admin
 ```
 ### Membuat LV
 ```bash
+lvcreate -L 25G team -n root
 lvcreate -L 15G team -n vars
 lvcreate -L 5G team -n vtmp
 lvcreate -L 5G team -n vlog
@@ -66,7 +67,7 @@ lvcreate -L 60G team -n home
 
 ### Format Filesystem
 ```
-mkfs.vfat -F32 -n BOOT /dev/sda5
+mkfs.vfat -F32 -n BOOT /dev/sda6
 ```
 ```
 mkfs.ext4 -b 4096 /dev/team/root
