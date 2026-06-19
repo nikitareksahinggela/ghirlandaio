@@ -67,4 +67,10 @@ mount --mkdir -o rw,nodev,relatime /dev/saw/home  /mnt/home
 mount --mkdir -o rw,nodev,nosuid,relatime /dev/saw/podman /mnt/var/lib/containers
 ```
 
-6. 
+6. Install Package (Pacstrap)
+```
+
+pacstrap /mnt base intel-ucode linux-lts linux-lts-headers linux-firmware mkinitcpio lvm2 git neovim firewalld openssh \ sudo pacman wget curl grep iwd podman
+```
+
+7. 
