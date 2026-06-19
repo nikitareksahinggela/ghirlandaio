@@ -1,6 +1,6 @@
 kelompok 19 meteorites
 
-1. 1. Naila Ahnafani
+1. Naila Ahnafani
 2. Nur Ahdiayani
 3. Muhammad Iqbal Tamam
 4. Kenari Namora Pratiwi Simanjuntak
