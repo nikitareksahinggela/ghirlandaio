@@ -20,7 +20,7 @@ station wlan0 get-networks
 ```
 
 ```bash
-station wlan0 connect (nama wifi)
+station wlan0 connect nama wifi
 ```
 
 Masukkan password Wi-Fi lalu:
@@ -79,7 +79,7 @@ Buka LUKS:
 cryptsetup luksOpen /dev/p.root name
 ```
 
-Masukkan password.
+Masukkan password
 
 ---
 
