@@ -34,7 +34,6 @@ nvim /etc/mkinitcpio.d/linux-hardened.preset
 
 Isi sesuai:
 
-```
 # mkinitcpio preset file for the 'linux-hardened' package
 
 ALL_config="/etc/mkinitcpio.conf"
@@ -53,10 +52,11 @@ default_uki="/boot/EFI/Linux/arch-linux-hardened.efi"
 #fallback_image="/boot/initramfs-linux-hardened-fallback.img"
 #fallback_uki="/efi/EFI/Linux/arch-linux-hardened-fallback.efi"
 #fallback_options="-S autodetect"
-
+```
 
 ### Build UKI
 
+```
 mkinitcpio -P
 ==> Building image from preset: /etc/mkinitcpio.d/linux-hardened.preset: 'default'
 ==> Using configuration file: '/etc/mkinitcpio.conf'
@@ -82,9 +82,15 @@ mkinitcpio -P
 ==> Initcpio image generation successful
 ==> Creating unified kernel image: '/boot/efi/Linux/arch-linux-hardened.efi'
 ==> Unified kernel image generation successful
+```
 
 
 ### Verifikasi File EFI
 
+```
 ls /boot/efi/Linux/arch-linux-hardened.efi
+```
+
+```
+exit
 ```
