@@ -369,7 +369,7 @@ HOOKS=(base systemd autodetect microcode modconf kms keyboard sd-vconsole block 
 Edit:
 
 ```bash
-nvim /etc/mkinitcpio.d/linux-lts.preset
+nvim /etc/mkinitcpio.d/linux-hardened.preset
 ```
 
 Ubah menjadi:
