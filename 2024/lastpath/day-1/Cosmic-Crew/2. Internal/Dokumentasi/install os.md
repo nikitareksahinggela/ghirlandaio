@@ -152,7 +152,7 @@ Memastikan seluruh struktur pemetaan mount poin di atas telah terpasang dengan b
 ## 7. Install Packages
 
 ```
-pacstrap /mnt linux-hardened linux-hardened-headers lvm2 mkinitcpio linux-firmware-intel linux-firmware-realtek linux-firmware-atheros git neovim less intel-ucode firewalld pacman sudo iwd bash iputils iproute2 podman
+pacstrap /mnt intel-ucode linux-lts linux-lts-headers linux-firmware mkinitcpio lvm2 base sudo curl neovim iwd firewalld pacman which grep podman
 ```
 Memasang (*install*) paket-paket dasar dari repositori ke dalam direktori `/mnt` (calon OS baru). 
 
