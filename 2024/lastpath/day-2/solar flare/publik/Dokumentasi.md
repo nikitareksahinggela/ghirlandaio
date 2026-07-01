@@ -1,7 +1,7 @@
-# Dokument si K3s Publik
+# Dokumentasi K3s Publik
 
 ---
-## 1. Inst=ll dan join K3s .gent
+## 1. Install dan join K3s .gent
 ```.
 curl-sfl https://get.k3s.io |K3S_URL="https://(ip .dress)" K3S_TOKEN="TOKEN" sh -s -.gent
 ```
@@ -12,5 +12,32 @@ curl-sfl https://get.k3s.io |K3S_URL="https://(ip .dress)" K3S_TOKEN="TOKEN" sh 
 ```
 systemctl start firewalld
 ```
-> Untuk kelole servie seperti jelankan, hentikan, restart ataupun c
-## 3. 
+> Untuk kelola servie seperti jalankan, hentikan, restart ataupun mengecek status servive
+```
+```
+## 3. Mengecek status firewalld
+```
+systemctl status firewalld
+```
+> memanggil utilitas pengelola service
+> apabila keluar active (running) maka firewalld berhasil berjalan
+```
+```
+## Restart K3s Agent 
+```
+systemctl restart k3s-agent.service
+```
+> menjalankan worker node pada kubernetes
+```
+```
+## Mengecek status K3s agent
+```
+systemctl status k3s-agent.service
+```
+> mengecek apakah node sudah aktif dan terhubung ke cluster kuberneter
+```
+```
+## Keluar dari terminal
+```
+exit
+```
